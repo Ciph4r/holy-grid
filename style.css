@@ -1,32 +1,38 @@
 #app {
   height: 300px;
   width: 500px;
+  display: grid;
+  grid-template-columns: 3fr 8fr 4fr;
+  grid-template-rows: 2fr 3fr 3fr;
 }
 
 #header {
   background-color: #9BCE1D;
+  grid-column: 1 / 4;
 }
 
 #footer {
   background-color: #9BCE1D;
+  grid-column: 1/ 4;
 }
 
 #main {
-  background-color: #F7F5D8
+  background-color: #F7F5D8;
 }
 
 #article-1 {
   background-color: lightcoral;
+  
 }
 
-#article-2 {
-  background-color: violet;
-}
+
 
 #nav {
   background-color: cornflowerblue;
 }
 
-#ad-area {
+#add {
   background-color: cornflowerblue;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
 }
